@@ -8,7 +8,7 @@ const projects = [
     image: "/projects/elanceforge.png",
     description:
       "Complete MERN Stack Digital Agency Platform with secure authentication, email verification, project management, payment integration, and role-based dashboards.",
-    github: "https://github.com/iamhemant123",
+    github: "https://github.com/iamhemant123/elance-forge-web",
     live: "https://elance-forge-web.vercel.app/",
     tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind","JWT","Email Verification","Razorpay"],
   },
@@ -19,8 +19,8 @@ const projects = [
     image: "/projects/portfolio.png",
     description:
       "A modern and responsive portfolio showcasing my skills and projects. Built with React, Tailwind CSS, and Framer Motion to provide a smooth and engaging user experience across all devices.",
-    github: "https://github.com/iamhemant123",
-    live: "https://hemant-portfolio-five.vercel.app/",
+    github: "https://github.com/iamhemant123/hemant-portfolio",
+    live: "https://hemant-portfolio-wheat.vercel.app/",
     tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
   },
 ];
