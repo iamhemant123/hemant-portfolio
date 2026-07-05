@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Dark mode selector */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900 overflow-x-hidden transition-all duration-300;
+}
+
+.dark body {
+  @apply bg-slate-950 text-white;
+}
