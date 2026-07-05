@@ -20,7 +20,7 @@ const projects = [
     description:
       "A modern and responsive portfolio showcasing my skills and projects. Built with React, Tailwind CSS, and Framer Motion to provide a smooth and engaging user experience across all devices.",
     github: "https://github.com/iamhemant123",
-    live: "#",
+    live: "https://hemant-portfolio-five.vercel.app/",
     tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
   },
 ];
