@@ -43,11 +43,10 @@ function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
           ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-lg border-b border-slate-200 dark:border-slate-700"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto h-[76px] px-6 lg:px-10 flex items-center justify-between">
 
@@ -119,7 +118,7 @@ function Navbar() {
             className="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-600 flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-800 transition"
           >
             {dark ? (
-              <HiOutlineSun 
+              <HiOutlineSun
                 size={24}
                 className="text-white"
               />
@@ -151,7 +150,7 @@ function Navbar() {
         </div>
 
       </div>
-            {/* Mobile Menu */}
+      {/* Mobile Menu */}
 
       <motion.div
         initial={false}
@@ -166,13 +165,19 @@ function Navbar() {
 
           {navLinks.map((item) => (
             <a
-              key={item.id}
-              href={`#${item.id}`}
-              onClick={() => setMenuOpen(false)}
-              className="text-lg font-medium text-slate-800 dark:text-white hover:text-cyan-500 transition"
-            >
-              {item.name}
-            </a>
+  key={item.id}
+  href={`#${item.id}`}
+  onClick={() => {
+    console.log(item.id);
+
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 1000);
+  }}
+  className="text-lg font-medium text-slate-800 dark:text-white hover:text-cyan-500 transition"
+>
+  {item.name}
+</a>
           ))}
 
           <a
